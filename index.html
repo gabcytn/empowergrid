@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/4bc1035a4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="action-bar">
+                <h1>empower<span>Grid</span></h1>
+                <i class="fa-solid fa-bars hamburger-menu"></i>
+            </div>
+            <div class="side-bar">
+                <div class="side-bar__item side-bar__item-title">
+                    <h2>More</h2>
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <hr>
+                <div class="side-bar__item side-bar__item-profile">
+                    <img src="img/user-img.png" alt="User image">
+                    <div class="profile-details">
+                        <div class="profile-texts">
+                            <p id="profile-name">Lebron James</p>
+                            <p id="show-profile">Show profile</p>
+                        </div>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="side-bar__section-title">Settings</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-user side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Personal information</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-shield side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Login & security</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-credit-card side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Payments</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-user-gear side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Accessibility</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-copy side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Taxes</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-globe side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Translation</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-bell side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Notifications</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-lock side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Privacy and sharing</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <h4 class="side-bar__section-title">Support</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-question side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Visit the help centre</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-kit-medical side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Get help with a safety issue</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-headphones side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Report concerns</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-pen side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Give us feedback</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="side-bar__section-title">Legal</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Terms of service</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Privacy policy</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Licenses</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+
+                <button id="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-navbar">
+            <div class="main-navbar__item">
+                <i class="fa-solid fa-gauge ic-dashboard"></i>
+                <p>Dashboard</p>
+            </div>
+            <div class="main-navbar__item">
+                <i class="fa-solid fa-store ic-marketplace"></i>
+                <p>Marketplace</p>
+            </div>
+            <div class="main-navbar__item">
+                <i class="fa-solid fa-newspaper ic-education"></i>
+                <p>Education</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
