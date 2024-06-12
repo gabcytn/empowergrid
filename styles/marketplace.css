@@ -105,3 +105,29 @@
     gap: .25rem;
     align-items: center;
 }
+
+.fade-in{
+    transform: translateY(-25px);
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.card-row .fade-in:nth-child(2).reveals{
+    animation: fade-in 1s .2s forwards;
+}
+.fade-in.reveals{
+    animation: fade-in 1s forwards;
+}
+
+.first-card{
+    animation: fade-in 1s forwards;
+}
