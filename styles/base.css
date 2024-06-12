@@ -45,9 +45,15 @@ body{
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    text-decoration: none;
+}
+
+.main-navbar__item i{
+    color: var(--icons);
 }
 
 .main-navbar__item p{
+    color: var(--soft-black);
     font-size: .65rem;
 }
 .fa-solid{
