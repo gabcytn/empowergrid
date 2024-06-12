@@ -75,6 +75,9 @@
     gap: .25rem;
     margin: 1rem 0;
 }
+.card-row:last-child{
+    margin-bottom: 3rem;
+}
 
 .card{
     width: 50%;
