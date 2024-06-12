@@ -32,8 +32,13 @@
 
 .filter-items{
     margin: 1rem 0;
+    padding: 0 .5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.filter-items p{
+    font-size: .8rem;
 }
 
 
@@ -72,8 +77,8 @@
 }
 
 .card-img{
-    /* border: 2px solid; */
     height: 50%;
+    overflow: hidden;
 }
 
 .card-item__price{
