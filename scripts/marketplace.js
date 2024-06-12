@@ -10,4 +10,4 @@ window.addEventListener('scroll', () => {
             i.classList.add('reveals')
         }
     }
-  })
+})

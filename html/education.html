@@ -490,5 +490,20 @@
         </div>
     </div>
     
+
+    <script>
+        const filterItems = document.querySelectorAll(".filter-section p");
+        filterItems.forEach(i => {
+            
+            i.addEventListener("click", event => {
+                filterItems.forEach(j => {
+                    j.id = "";
+                })
+                
+                event.target.id = "active-filter";
+                
+            })
+        })
+    </script>
 </body>
 </html>
