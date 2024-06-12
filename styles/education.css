@@ -95,6 +95,9 @@
 .trending-post + .trending-post{
     margin-top: 1.5rem;
 }
+.trending-post h4{
+    color: var(--main-green);
+}
 .trending-post__author{
     display: flex;
     gap: .25rem;
@@ -109,6 +112,7 @@
 }
 .trending-post__engagements i{
     font-size: .75rem;
+    color: var(--main-green);
 }
 .trending-post__engagements span{
     font-size: .65rem;

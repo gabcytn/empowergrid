@@ -13,7 +13,7 @@
 }
 
 i{
-    color: var(--main-green);
+    color: var(--soft-black);
 }
 
 img{
@@ -141,7 +141,7 @@ body{
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color: var(--main-green);
+    background-color: var(--soft-black);
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
 }
