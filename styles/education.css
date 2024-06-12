@@ -12,11 +12,13 @@
 .education-title h2{
     margin-bottom: .85rem;
     opacity: .85;
+    text-align: center;
 }
 .education-title p{
     font-size: .8rem;
     opacity: .5;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #main{
