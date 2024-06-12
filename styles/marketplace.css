@@ -91,7 +91,9 @@
     height: 50%;
     overflow: hidden;
 }
-
+.card-item__title{
+    color: var(--main-green);
+}
 .card-item__price{
     font-size: .815rem;
 }
