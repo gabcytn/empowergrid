@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
     for (let i of container){
         let wHeight = window.innerHeight;
         let revealTop = i.getBoundingClientRect().top;
-        let revealPoint = 250;
+        let revealPoint = 180;
   
         if (revealTop < wHeight - revealPoint){
             i.classList.add('reveals')

@@ -122,3 +122,24 @@
 .trending-post:last-child{
     margin-bottom: 3rem;
 }
+
+
+
+.fade-in{
+    transform: translateY(-25px);
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.fade-in.reveals{
+    animation: fade-in 1s forwards;
+}
