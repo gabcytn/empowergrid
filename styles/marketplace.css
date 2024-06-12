@@ -1,0 +1,102 @@
+:root{
+    --off-white: #eee;
+    --soft-black: #020202;
+    --white: #f2f5f5;
+    --main-green: #558b2f;
+    --icons: #1E3050;
+    --grey: #646464;
+}
+
+.search-bar{
+    display: flex;
+}
+.search-bar__container{
+    position: relative;
+    width: 100%;
+}
+.search-bar__container input{
+    width: 100%;
+    padding: .25rem;
+    font-size: .85rem;
+    font-family: 'Poppins';
+}
+.search-bar__container i{
+    font-size: .85rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .75rem;
+}
+
+
+
+.filter-items{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.companies-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    border-radius: 10px;
+    padding: .75rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+}
+.companies-list > * {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.card-row{
+    display: flex;
+    gap: .25rem;
+    margin: 1rem 0;
+}
+
+.card{
+    width: 50%;
+    background-color: var(--white);
+    padding: .75rem .75rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card-img{
+    /* border: 2px solid; */
+    height: 50%;
+}
+
+.card-item__price{
+    font-size: .815rem;
+}
+.card-item__reviews img{
+    width: 50px;
+}
+.card-item__shipping-details {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+}
+.card-item__shipping-details i {
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+}
+.card-item__shipping-details p{
+    font-size: .6rem;
+}
+.card-item__location-details{
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+}
