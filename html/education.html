@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <script defer src="scripts/index.js"></script>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/education.css">
+    <script defer src="../scripts/index.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
                 </div>
                 <hr>
                 <div class="side-bar__item side-bar__item-profile">
-                    <img src="img/user-img.png" alt="User image">
+                    <img src="../img/user-img.png" alt="User image">
                     <div class="profile-details">
                         <div class="profile-texts">
                             <p id="profile-name">Lebron James</p>
@@ -166,23 +167,190 @@
                 <button id="logout-btn">Logout</button>
             </div>
         </nav>
+
+        <div class="container education-title">
+            <h2>Hi, Lebron!</h2>
+            <p>Find topics that you like to read</p>
+        </div>
     </header>
 
-    <main class="container">
-        <h2>Dashboard</h2>
+    <main id="main" class="container">
+        <div class="filter-section">
+            <p id="active-filter">Popular</p>
+            <p>Recommended</p>
+            <p>New Topic</p>
+        </div>
+
+        <h3>Popular Topics</h3>
+        <div class="popular-topics__list">
+            <div class="popular-topic">
+                <h4>Renewable energy</h4>
+                <p>30 posts</p>
+            </div>
+            <div class="popular-topic">
+                <h4>Solar panels</h4>
+                <p>21 posts</p>
+            </div>
+            <div class="popular-topic">
+                <h4>Fossil fuels</h4>
+                <p>60 posts</p>
+            </div>
+            <div class="popular-topic">
+                <h4>Wind turbines</h4>
+                <p>9 posts</p>
+            </div>
+            <div class="popular-topic">
+                <h4>Clean energy</h4>
+                <p>12 posts</p>
+            </div>
+        </div>
+
+        <h3>Trending posts</h3>
+        <div class="trending-post">
+            <h4>Solar energy in a nutshell</h4>
+            <div class="trending-post__author">
+                <p>Luka Doncic</p>
+                <p>|</p>
+                <p>1h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>120 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>80 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>200 views</span>
+                </div>
+            </div>
+        </div>
+        <div class="trending-post">
+            <h4>Fossil fuels' harm</h4>
+            <div class="trending-post__author">
+                <p>Nikola Jokic</p>
+                <p>|</p>
+                <p>5h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>130 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>10 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>200 views</span>
+                </div>
+            </div>
+        </div>
+        <div class="trending-post">
+            <h4>How to lessen carbon footprint</h4>
+            <div class="trending-post__author">
+                <p>Kyrie Irving</p>
+                <p>|</p>
+                <p>6h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>100 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>80 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>250 views</span>
+                </div>
+            </div>
+        </div>
+        <div class="trending-post">
+            <h4>Implementing clean energy</h4>
+            <div class="trending-post__author">
+                <p>Jimmy Buckets</p>
+                <p>|</p>
+                <p>8h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>20 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>8 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>80 views</span>
+                </div>
+            </div>
+        </div>
+        <div class="trending-post">
+            <h4>Transitioning to solar energy</h4>
+            <div class="trending-post__author">
+                <p>Kevin Durant</p>
+                <p>|</p>
+                <p>16h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>99 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>10 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>120 views</span>
+                </div>
+            </div>
+        </div>
+        <div class="trending-post">
+            <h4>The zero waste life</h4>
+            <div class="trending-post__author">
+                <p>Russell Westbrook</p>
+                <p>|</p>
+                <p>23h ago</p>
+            </div>
+            <div class="trending-post__engagements">
+                <div class="likes">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>116 likes</span>
+                </div>
+                <div class="comments">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>50 replies</span>
+                </div>
+                <div class="views">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>220 views</span>
+                </div>
+            </div>
+        </div>
     </main>
 
     <div class="container">
         <div class="main-navbar">
-            <a href="#" class="main-navbar__item link-dashboard">
+            <a href="../index.html" class="main-navbar__item link-dashboard">
                 <i class="fa-solid fa-gauge ic-dashboard"></i>
                 <p>Dashboard</p>
             </a>
-            <a href="html/marketplace.html" class="main-navbar__item link-marketplace">
+            <a href="marketplace.html" class="main-navbar__item link-marketplace">
                 <i class="fa-solid fa-store ic-marketplace"></i>
                 <p>Marketplace</p>
             </a>
-            <a href="html/education.html" class="main-navbar__item link-education">
+            <a href="#" class="main-navbar__item link-education">
                 <i class="fa-solid fa-newspaper ic-education"></i>
                 <p>Education</p>
             </a>

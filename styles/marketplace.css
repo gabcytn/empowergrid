@@ -45,6 +45,9 @@
     width: 100%;
     text-align: center;
 }
+#active-filter{
+    color: var(--main-green);
+}
 
 
 
