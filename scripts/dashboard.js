@@ -30,7 +30,9 @@ new Chart(lineChart, {
                     display: true
                 },
                 beginAtZero: true,
-                display: false
+                ticks: {
+                    display: false
+                }
             }
         },
         plugins: {
@@ -52,4 +54,47 @@ filterItems.forEach(i => {
         event.target.id = "active-filter";
         
     })
+})
+
+
+const barChart = document.querySelector("#bar-chart");
+const barChartData = {
+    labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
+    datasets: [
+        {
+        label: "Renewable", 
+        data: [83, 75, 63, 40, 72, 80, 76], 
+        backgroundColor: "rgb(85, 139, 47)", 
+        borderRadius: 3
+        },
+        {
+        label: "Fossil",
+        data: [17, 25, 37, 60, 28, 20, 24],
+        backgroundColor: "rgba(85, 139, 47, 0.2)",
+        borderRadius: 3
+        }]
+}
+new Chart(barChart, {
+    type: "bar",
+    data: barChartData,
+    options: {
+        scales: {
+            x: {
+                display: true,
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: true
+                },
+                beginAtZero: true,
+                ticks: {
+                    display: false
+                }
+            }
+        },
+        
+    }
 })
