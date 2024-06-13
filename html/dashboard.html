@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/4bc1035a4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script defer src="../scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="action-bar">
+                <h1>Dash<span>board</span></h1>
+                <i class="fa-solid fa-bars hamburger-menu"></i>
+            </div>
+            <div class="side-bar">
+                <div class="side-bar__item side-bar__item-title">
+                    <h2>More</h2>
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <hr>
+                <div class="side-bar__item side-bar__item-profile">
+                    <img src="img/user-img.png" alt="User image">
+                    <div class="profile-details">
+                        <div class="profile-texts">
+                            <p id="profile-name">Username</p>
+                            <p id="show-profile">Show profile</p>
+                        </div>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="side-bar__section-title">Settings</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-user side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Personal information</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-shield side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Login & security</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-credit-card side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Payments</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-user-gear side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Accessibility</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-copy side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Taxes</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-globe side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Translation</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-bell side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Notifications</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-lock side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Privacy and sharing</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="side-bar__section-title">Support</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-question side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Visit the help centre</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-kit-medical side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Get help with a safety issue</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-headphones side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Report concerns</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-pen side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Give us feedback</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="side-bar__section-title">Legal</h4>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Terms of service</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Privacy policy</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="side-bar__item">
+                    <i class="fa-solid fa-book-open-reader side-icons"></i>
+                    <div class="profile-details">
+                        <p class="side-bar__item-text">Licenses</p>
+                        <p>&#10095</p>
+                    </div>
+                </div>
+                <hr>
+
+                <button id="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+
+            <h5 class="chart-title">Energy consumption</h5>
+            <canvas id="main-linechart"></canvas>
+            <div class="filter-items">
+                <p>24H</p>
+                <p>7D</p>
+                <p id="active-filter">1M</p>
+                <p>3M</p>
+                <p>6M</p>
+                <p>1Y</p>
+            </div>
+        </section>
+
+        <div class="section-percentage">
+            <section>
+                <div class="section-header">
+                    <h5 class="chart-title">Renewable</h5>
+                    <i class="fa-regular fa-circle-check" style="color: #558b2f;"></i>
+                </div>
+                <div>
+                    <h3>82%</h3>
+                    <div class="progress-bar first-bar"></div>
+                </div>
+
+            </section>
+            <section>
+                <div class="section-header">
+                    <h5 class="chart-title">Fossil</h5>
+                    <i class="fa-regular fa-circle-check" style="color: #558b2f;"></i>
+                </div>
+                <div>
+                    <h3>21%</h3>
+                    <div class="progress-bar second-bar"></div>
+                </div>
+
+            </section>
+        </div>
+
+        <section>
+            <h5 class="chart-title">Energy sources</h5>
+            <canvas id="bar-chart"></canvas>
+        </section>
+
+        <div class="bar-graph__title">
+            <h5 style="margin-left: 1em; display: flex; align-items: center;">Total consumption</h5>
+            <select name="" id="">
+                <option value="">Monthly</option>
+                <option value="" selected>Quarter</option>
+                <option value="">Annual</option>
+            </select>
+        </div>
+        <section class="bar-graph__section">
+            <div class="section-left">
+               <div class="bar-graph__details">
+                    <div class="bar-graph__details-top">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <p>10.6%</p>
+                    </div>
+                    <div class="bar-graph__details-bottom">
+                        <h2>29kWh</h2>
+                        <p>Apr - Jul 2024</p>
+                    </div>
+               </div> 
+            </div>
+            <div class="section-right">
+                <div class="bar-graph"></div>
+            </div>
+        </section>
+
+        <section id="section-last">
+            <div class="section-header">
+                <h5>Recent Orders</h5>
+                <p>See all &#10095;</p>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="pending">Pending</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="delivered">Delivered</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="delivered">Delivered</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="delivered">Delivered</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="cancelled">Cancelled</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="row-col">
+                    <p>#H720AJ</p>
+                </div>
+                <div class="row-col">
+                    <p>Anthony Davis</p>
+                    <p>10 JUN 2024, 17:50</p>
+                </div>
+                <div class="row-col">
+                    <p>P99.99</p>
+                </div>
+                <div class="row-col">
+                    <p class="delivered">Delivered</p>
+                </div>
+            </div>
+            
+            
+        </section>
+
+    </main>
+
+    <div class="container">
+        <div class="main-navbar">
+            <a href="#" class="main-navbar__item link-dashboard">
+                <i class="fa-solid fa-gauge ic-dashboard"></i>
+                <p>Dashboard</p>
+            </a>
+            <a href="marketplace.html" class="main-navbar__item link-marketplace">
+                <i class="fa-solid fa-store ic-marketplace"></i>
+                <p>Marketplace</p>
+            </a>
+            <a href="education.html" class="main-navbar__item link-education">
+                <i class="fa-solid fa-newspaper ic-education"></i>
+                <p>Education</p>
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+    
+</body>
+</html>

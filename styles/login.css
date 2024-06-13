@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+:root{
+    --main-green: #558b2f;
+}
+body{
+    background: url(../img/bg2.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat';
+}
+
+#logo{
+    width: 90px;
+    margin-top: 1rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+
+form h1,
+form p {
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    border-bottom: 1px solid;
+
+}
+.input-box label{
+    position: absolute;
+    left: .5rem;
+    pointer-events: none;
+}
+.input-box input{
+    border: none;
+    outline: none;
+    padding: .5rem .5rem;
+    font-size: 1.15rem;
+    background-color: transparent;
+}
+
+#submit-btn{
+    padding: .8rem 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--main-green);
+    color: #eee;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+input:focus ~ label,
+input:valid ~ label
+{
+    transition: .5s;
+    font-size: .7rem;
+    left: .45rem;
+    top: -.45rem;
+    color: var(--main-green)
+}
+
+#or-sign-in{
+    font-size: .85rem;
+    position: relative;
+}
+
+
+.socials-signin {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+.socials-signin img{
+    width: 20px;
+}
+.social{
+    border-radius: 10px;
+    background-color: #f2f5f5;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+#no-account{
+    font-size: .85rem;
+}
+span{
+    color: var(--main-green);
+}
