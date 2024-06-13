@@ -15,7 +15,6 @@
 .filter-items{
     display: flex;
     justify-content: center;
-    gap: .75rem;
 }
 .filter-items > *{
     font-size: .85rem;
