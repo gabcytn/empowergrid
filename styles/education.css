@@ -52,6 +52,7 @@
 #active-filter{
     color: var(--off-white);
     background-color: var(--main-green);
+    transition: .25s;
 }
 
 #main h3{

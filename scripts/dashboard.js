@@ -65,13 +65,13 @@ const barChartData = {
         label: "Renewable", 
         data: [83, 75, 63, 40, 72, 80, 76], 
         backgroundColor: "rgb(85, 139, 47)", 
-        borderRadius: 5
+        borderRadius: 2
         },
         {
         label: "Fossil",
         data: [17, 25, 37, 60, 28, 20, 24],
         backgroundColor: "rgba(85, 139, 47, 0.2)",
-        borderRadius: 5
+        borderRadius: 2
         }]
 }
 new Chart(barChart, {
