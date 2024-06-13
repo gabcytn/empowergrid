@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
     <script defer src="scripts/index.js"></script>
 </head>
 <body>
@@ -169,7 +170,20 @@
     </header>
 
     <main class="container">
-        <h2>Dashboard</h2>
+        <section>
+
+            <h5 class="chart-title">Energy consumption</h5>
+            <canvas id="main-linechart"></canvas>
+            <div class="filter-items">
+                <p>24H</p>
+                <p>7D</p>
+                <p id="active-filter">1M</p>
+                <p>3M</p>
+                <p>6M</p>
+                <p>1Y</p>
+            </div>
+        </section>
+
     </main>
 
     <div class="container">
@@ -188,6 +202,9 @@
             </a>
         </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/dashboard.js"></script>
     
 </body>
 </html>

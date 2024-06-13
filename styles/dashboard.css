@@ -1,0 +1,29 @@
+:root{
+    --off-white: #eee;
+    --soft-black: #020202;
+    --white: #f2f5f5;
+    --main-green: #558b2f;
+    --icons: #1E3050;
+}
+
+
+
+.chart-title{
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+.filter-items{
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+}
+.filter-items > *{
+    font-size: .85rem;
+    padding: .25rem 1rem;
+    border-radius: 5px;
+}
+#active-filter{
+    background-color: var(--main-green);
+    color: var(--off-white);
+    transition: all .415s;
+}
