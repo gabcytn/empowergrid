@@ -74,7 +74,7 @@ section{
     animation: progress-fade 1.25s forwards;
 }
 .first-bar::before{
-    width: 82%;
+    width: 79%;
 }
 .second-bar::before{
     width: 21%;
